@@ -82,7 +82,7 @@ These results underscore the significant contribution of our FaceID-6M dataset i
 
 We release two versions of our constructed dataset:
 1. [FaceID-70K](https://huggingface.co/datasets/Super-shuhe/FaceID-70K): This is a subset of our FaceID-6M by further removing images lower than 1024 pixels either in width or height, consisting approximately 70K text-image pairs. 
-2. FaceID-6M: This is our constructed full FaceID customization dataset. Given the large size of this dataset, approximately 1.3TB, we are exploring options to host it on a public platform for free access. Currently, the dataset is stored on the paid Tencent Cloud platform. If you require urgent access, please feel free to email us, and we will provide you with a separate download link. Currently, we recommend using [FaceID-70K](https://huggingface.co/datasets/Super-shuhe/FaceID-70K) (~460G) first. As this dataset consists entirely of high-resolution images (greater than 1024 pixels), based on our experiments, we found that training with this subset yields results that are not significantly lower compared to training on the full FaceID-6M dataset.
+2. [FaceID-6M](https://huggingface.co/datasets/Super-shuhe/FaceID-6M): This is our constructed full FaceID customization dataset.
 
 Please note that due to the large file size, we have pre-split it into multiple smaller parts. Before use, please execute the merge and unzip commands to restore the full file. Take the InstantID-FaceID-70K dataset as the example:
 1. `cat laion_1024.tar.gz.* > laion_1024.tar.gz`
@@ -93,8 +93,8 @@ Please note that due to the large file size, we have pre-split it into multiple 
 ## Released FaceID Customization Models
 
 We release two versions of trained InstantID models:
-1. [InstantID-FaceID-70K](https://huggingface.co/Super-shuhe/InstantID-FaceID-70K): Model trained on our released [FaceID-70K](https://huggingface.co/datasets/Super-shuhe/FaceID-70K) dataset.
-2. [InstantID-FaceID-6M](https://huggingface.co/Super-shuhe/InstantID-FaceID-6M): Model trained on our FaceID-6M dataset.
+1. [InstantID-FaceID-70K](https://huggingface.co/Super-shuhe/InstantID-FaceID-70K): Model trained on our [FaceID-70K](https://huggingface.co/datasets/Super-shuhe/FaceID-70K) dataset.
+2. [InstantID-FaceID-6M](https://huggingface.co/Super-shuhe/InstantID-FaceID-6M): Model trained on our [FaceID-6M](https://huggingface.co/datasets/Super-shuhe/FaceID-6M) dataset.
 
 
 
@@ -147,7 +147,7 @@ For face encoder, you need to manutally download via this [URL](https://github.c
 
 Please download our released dataset from:
 1. [FaceID-70K](https://huggingface.co/datasets/Super-shuhe/FaceID-70K)
-2. FaceID-6M: Email us for the download link.
+2. [FaceID-6M](https://huggingface.co/datasets/Super-shuhe/FaceID-6M)
 
 Please note that due to the large file size, we have pre-split it into multiple smaller parts. Before use, please execute the merge and unzip commands to restore the full file. Take the InstantID-FaceID-70K dataset as the example:
 1. `cat laion_1024.tar.gz.* > laion_1024.tar.gz`
