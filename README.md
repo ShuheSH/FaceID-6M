@@ -88,6 +88,14 @@ Please note that due to the large file size, we have pre-split it into multiple 
 1. `cat laion_1024.tar.gz.* > laion_1024.tar.gz`
 2. `tar zxvf laion_1024.tar.gz`
 
+**Index**
+After restoring the full dataset, you will find large amounts `.png` and `.npy` file, and also a `./face` directory and a `*.jsonl` file:
+1. `*.png`: Tmage files
+2. `*.npy`: The pre-computed landmarks of the face in the related image, which is necessary to train [InstantID-based models](https://instantid.github.io/). If you don't need that, just ignore them.
+3. `./face`: The directory including face files.
+4. `*.jsonl`: Descriptions or texts. Ignore the file paths listed in the `.jsonl` file and use the line number instead to locate the corresponding image, face, and `.npy` files. For example, the 0th line in the `.jsonl` file corresponds to `0.png`, `0.npy`, and `./face/0.png`.
+
+
 
 
 ## Released FaceID Customization Models
