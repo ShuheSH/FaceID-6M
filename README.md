@@ -2,7 +2,7 @@
 
 
 
-This repository contains resources referenced in the paper [FaceID-6M: A Large-Scale, Open-Source FaceID Customization Dataset](). 
+This repository contains resources referenced in the paper [FaceID-6M: A Large-Scale, Open-Source FaceID Customization Dataset](https://arxiv.org/abs/2503.07091). 
 
 If you find this repository helpful, please cite the following:
 
